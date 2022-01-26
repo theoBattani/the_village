@@ -3,6 +3,19 @@
     <head>
 
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
 
         <title>{% block title %}The village{% endblock %}</title>
 
@@ -17,8 +30,63 @@
         {% endblock %}
     </head>
 
-    <body>
+    <body id="page-top" style="background-color: #333333;">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">The village</a>
+                <button 
+                    class="navbar-toggler navbar-toggler-right" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarResponsive" 
+                    aria-controls="navbarResponsive" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                >
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Weather</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">The Village</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">A simple AFPA ECF project</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         {% block body %}{% endblock %}
+
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50">
+            {# <div class="container px-4 px-lg-5">...</div> #}
+            <div class="social d-flex justify-content-center">
+                <a class="mx-2" href="https://github.com/theoBattani/the_village"><i class="fab fa-github"></i></a>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 
 </html>
