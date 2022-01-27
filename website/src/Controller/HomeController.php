@@ -6,6 +6,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+use App\Entity\Article;
+
 class HomeController extends AbstractController
 {
     /**
@@ -25,6 +27,7 @@ class HomeController extends AbstractController
     {
         return $this->render('home/news.html.twig', [
             'controller_name' => 'HomeController',
+            'articles' => $this->getDoctrine()->getRepository(Article::class)->findAll(),
         ]);
     }
 

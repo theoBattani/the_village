@@ -4,89 +4,98 @@
 
 {% block body %}
 
-    <!-- Weather and location-->
-    <section class="projects-section" id="projects" style="background-color: #0A0A0A;"> -->
-        <div class="container px-4 px-lg-5"> -->
+  <!-- Weather and location-->
+  <section class="projects-section" id="weather" style="background-color: #0A0A0A;"> -->
+    <div class="container px-4 px-lg-5"> -->
 
-            <!-- Project One Row-->
-            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                <div class="col-lg-6">
-                    <!-- <img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /> -->
-                    <a href="https://www.prevision-meteo.ch/meteo/localite/villefontaine">
-                        <img src="https://www.prevision-meteo.ch/uploads/widget/villefontaine_0.png" width="100%" height="100%" />
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-dark text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Lorem Elsass ipsum</h4>
-                                <p class="mb-0 text-white-50">
-                                    Wotch a kofee avec ton bibalaekaess et ta wurscht ? Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym. Tiens, un rottznoz sur le comptoir.
-                                </p>
-                                <hr class="d-none d-lg-block mb-0 ms-0" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Project Two Row-->
-            <div class="row gx-0 justify-content-center">
-                <div class="col-lg-6">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.721320773618!2d5.160979815815737!3d45.62573990839556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4d28ff7b3a1e7%3A0xf23a9c349d6d0c6!2sThe%20Village!5e0!3m2!1sen!2sfr!4v1643119892108!5m2!1sen!2sfr" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="col-lg-6 order-lg-first">
-                    <div class="bg-dark text-center h-100 project">
-                        <div class="d-flex h-100">
-                            <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">s'guelt</h4>
-                                <p class="mb-0 text-white-50">Bandes de knäckes</p>
-                                <hr class="d-none d-lg-block mb-0 me-0" />
-                            </div>
-                        </div>
+      <!-- Project One Row-->
+      <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+        <div class="col-lg-6">
+          <!-- <img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /> -->
+          {# <iframe 
+              id="widget_autocomplete_preview"  
+              frameborder="0" 
+              width="100%"
+              height="100%"
+              style="overflow-y: hidden;"
+              src="https://meteofrance.com/widget/prevision/385530">
+          </iframe> #}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.721320773618!2d5.160979815815737!3d45.62573990839556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4d28ff7b3a1e7%3A0xf23a9c349d6d0c6!2sThe%20Village!5e0!3m2!1sen!2sfr!4v1643119892108!5m2!1sen!2sfr" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+        <div class="col-lg-6">
+            <div class="bg-dark text-center h-100 project">
+                <div class="d-flex h-100">
+                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                        <h4 class="text-white">Lorem Elsass ipsum</h4>
+                        <p class="mb-0 text-white-50">
+                            Wotch a kofee avec ton bibalaekaess et ta wurscht ? Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym. Tiens, un rottznoz sur le comptoir.
+                        </p>
+                        <hr class="d-none d-lg-block mb-0 ms-0" />
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Contact-->
-    <section class="contact-section bg-black" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50"><a href="#!">someone@the_village.com</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4 mx-auto" />
-                            <div class="small text-black-50">+1 (555) 902-8832</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <!-- Project Two Row-->
+      <div class="row gx-0 justify-content-center">
+        <div class="col-lg-6">
+          <a href="https://www.prevision-meteo.ch/meteo/localite/villefontaine">
+              <img src="https://www.prevision-meteo.ch/uploads/widget/villefontaine_0.png" width="100%" height="100%" />
+          </a>
         </div>
-    </section>
+      <div class="col-lg-6 order-lg-first">
+        <div class="bg-dark text-center h-100 project">
+          <div class="d-flex h-100">
+            <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">s'guelt</h4>
+                <p class="mb-0 text-white-50">Bandes de knäckes</p>
+                <hr class="d-none d-lg-block mb-0 me-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact-->
+  <section class="contact-section bg-black" id="contact">
+      <div class="container px-4 px-lg-5">
+          <div class="row gx-4 gx-lg-5">
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Address</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-envelope text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Email</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50"><a href="#!">someone@the_village.com</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                      <div class="card-body text-center">
+                          <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                          <h4 class="text-uppercase m-0">Phone</h4>
+                          <hr class="my-4 mx-auto" />
+                          <div class="small text-black-50">+1 (555) 902-8832</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 {% endblock %}
